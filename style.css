@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+}
+
+header {
+    width: 100%;
+    background-color: #000;
+    height: 90px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+}
+
+nav {
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0 auto; */
+    padding: 8px 20px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+
+}
+.nav-item {
+    margin: 0 18px;
+    padding: 8px 15px;
+}
+
+.nav-item a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: .3s linear;
+}
+
+.nav-item a:hover {
+    transform: scale(1.2);
+}
+
+/* section-1 */
+.container {
+    width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.section-1 {
+    width: 100%;
+    background: url('img/6166980_17545.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 89vh;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* .section-1 .container {
+    
+} */
+
+.section-1 .content {
+    width: 60%;
+    gap: 15px;
+    padding-right: 50px;
+    /* margin-left: 100px; */
+}
+
+.content h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.content .btn {
+    text-decoration: none;
+    background: linear-gradient(to bottom right, #bcdfff, #4397fd);
+    padding: 15px 30px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 20px;
+    transition: .3s linear;
+
+}
+
+.section-1 .img-profile {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-profile img {
+    width: 260px;
+    border-radius: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.491);
+    animation: up-down 5s ease-in-out infinite;
+    box-shadow: 0 5px 40px #6aabfb;   
+}
+
+@keyframes up-down {
+    0%, 100% {
+        transform: translateY(4);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+
+
